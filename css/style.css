@@ -53,6 +53,7 @@ p {
 
 /* スタイルを定義する */
 .modal {
+<<<<<<< HEAD
     display: none;
     position: fixed;
     z-index: 1;
@@ -90,3 +91,47 @@ p {
     cursor: pointer;
 }
 
+=======
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.5); /* ポップアップの背景色と透明度 */
+}
+
+.modal-content {
+	background-color: #fff; /* ポップアップのコンテンツの背景色 */
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	max-width: 400px;
+	width: 50%;
+}
+.modal-content img {
+	max-width:100%;
+}
+
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+.home {
+	background-image: url("../image/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+>>>>>>> 4681062723453fe6a1415b3abc4c9a7d0ed7f1ef
