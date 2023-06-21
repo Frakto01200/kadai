@@ -1,32 +1,63 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">    
-    <title>
-        富谷拓末の紹介ページ
-    </title>
+<meta charset="UTF-8"> 
+<link rel="stylesheet" href="css/tomitani.css">   
+<title>富谷拓末の紹介ページ</title>
 </head>
 <body>
     <!-- ヘッダー -->
 	<header>
-		<h1>富谷拓末の紹介ページ（作成者：林玲）</h1>
+		<h1>富谷拓末の紹介ページ<small>（作成者：林玲）</small></h1>
+        <div id="disp"><img src="image/"></div>
+        写真：
+        <input type="button" value="表示" onclick="hyoji(0)">
+        <input type="button" value="非表示" onclick="hyoji(1)">
+        <script>
 
-        <button type="button" class="btn">写真表示</button>
+            function hyoji(num)
+            {
+              if (num == 0)
+              {
+                document.getElementById("disp").style.display="block";
+              }
+              else
+              {
+                document.getElementById("disp").style.display="none";
+              }
+            }
+            
+            </script>
 	</header>
     <!-- ヘッダー ここまで -->
     <!--メイン-->
-    <p>年齢:19歳<br>
-    趣味:友人と共にアフタヌーンティーを嗜むこと<br>
-    得意科目:開発技術<br>
-    好きな食べ物:スコッチ・紅茶<br>
-    就職活動の方針:路頭に迷い中</p>
+    <p><b>年齢:</b>19歳<br>
+    <b>趣味:</b>友人と共にアフタヌーンティーを嗜むこと<br>
+    <b>得意科目:</b>開発技術<br>
+    <b>好きな食べ物:</b>スコッチ・紅茶<br>
+    <b>就職活動の方針:</b>路頭に迷い中</p>
 
     <!--コメント-->
-    <p>班員からのコメント：<br>
-    富谷：<br>
-    山下：<br>
-    井上：<br>
-    林歩：</p>
+    <h2>班員からのコメント：</h2>
+    <table>
+        <tr>
+            <th>富谷：</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>山下：</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>井上：</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>林歩：</th>
+            <td></td>
+        </tr>
+    </table>
+    
     <!--コメント　終わり-->
     <!--メイン　終わり-->
     <!-- フッター -->
