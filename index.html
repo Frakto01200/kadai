@@ -4,6 +4,14 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/style.css">
 <title>自己紹介</title>
+
+<script>
+    var count = 0;
+    function incrementCount(){
+        count++;
+        document.getElementById('counter').textContent=count;
+    }
+    </script>
 </head>
 <body class="home">
 <div>
@@ -23,7 +31,6 @@
                 <li><a href="ayuki.html">林歩</a></li>
             </ul>
         </nav>
-	
 	<!-- メイン ここまで -->
 	<!-- フッター -->
 	<footer class="">
@@ -49,8 +56,11 @@
 <body>
     <script src="js/randomcolor.js"></script>
 </body>
-<!--背景-->
 
+
+<button onclick="incrementCount()">ボタンをクリック</button>
+<p>クリックされた回数: <span id="counter">0</span></p>
+<!--背景-->
 <script src="js/popup.js"></script>
 <script src="js/app.js"></script>
 </body>
