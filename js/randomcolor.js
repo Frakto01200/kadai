@@ -14,3 +14,6 @@ const button = document.getElementById('changeColorButton');
             }
             return color;
         }
+        setInterval(function() {
+               changeBackgroundColor(); 
+        }, 1)
