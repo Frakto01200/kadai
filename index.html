@@ -11,6 +11,12 @@
         count++;
         document.getElementById('counter').textContent=count;
     }
+
+    function resetCount() {
+            event.preventDefault();
+            count = 0;
+            document.getElementById('counter').textContent = count;
+        }
     </script>
 </head>
 <body class="home">
@@ -56,6 +62,7 @@
 
 <button onclick="incrementCount()">ボタンをクリック</button>
 <p>クリックされた回数: <span id="counter">0</span></p>
+<button onclick="resetCount()">リセット</button>
 <!--背景-->
 <script src="js/popup.js"></script>
 <script src="js/app.js"></script>
