@@ -140,3 +140,69 @@ p {
 	cursor: pointer;
 }
 
+.clock {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 48px;
+    color: #fff;
+    background: linear-gradient(45deg, #ff0055, #00d4ff);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    left: 10px;
+    
+  }
+  
+  .clock span {
+    display: inline-block;
+    padding: 0 5px;
+  }
+  
+  .clock:before,
+  .clock:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .clock:after {
+    clear: both;
+  }
+  
+  .clock .colon {
+    position: relative;
+    top: -10px;
+  }
+  
+  .clock .colon:before,
+  .clock .colon:after {
+    content: ":";
+    position: absolute;
+    font-size: 36px;
+    color: #fff;
+    opacity: 0.6;
+  }
+  
+  .clock .colon:before {
+    left: -20px;
+  }
+  
+  .clock .colon:after {
+    right: -20px;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .clock {
+    animation: gradient-animation 5s ease infinite;
+  }
