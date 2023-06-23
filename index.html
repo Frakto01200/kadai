@@ -11,6 +11,12 @@
         count++;
         document.getElementById('counter').textContent=count;
     }
+
+    function resetCount() {
+            event.preventDefault();
+            count = 0;
+            document.getElementById('counter').textContent = count;
+        }
     </script>
 </head>
 <body class="home">
@@ -43,6 +49,7 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <p><img src="image/human.jpg"><h1>見てるぞ・・・</h1></p>
+            <button id="stopButton">齋藤停止ボタン</button>
         </div>
     </div>
 <!--えいじ-->
@@ -65,7 +72,11 @@
 
 <button onclick="incrementCount()">ボタンをクリック</button>
 <p>クリックされた回数: <span id="counter">0</span></p>
+<button onclick="resetCount()">リセット</button>
+<input type="number" id="count">
+<button onclick="showAlerts()">アラートを表示</button>
 <!--背景-->
+<script src="js/alert.js"></script>
 <script src="js/popup.js"></script>
 <script src="js/app.js"></script>
 </body>
