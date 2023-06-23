@@ -7,30 +7,47 @@
 </head>
 <body>
     <!-- ヘッダー -->
-	<header>
-		<h1>富谷拓末の紹介ページ<small>（作成者：林玲）</small></h1>
-        <div id="disp"><img src="image/"></div>
-        写真：
-        <input type="button" value="表示" onclick="hyoji(0)">
-        <input type="button" value="非表示" onclick="hyoji(1)">
-        <script>
-
-            function hyoji(num)
-            {
-              if (num == 0)
-              {
-                document.getElementById("disp").style.display="block";
-              }
-              else
-              {
-                document.getElementById("disp").style.display="none";
-              }
-            }
-            
-            </script>
+    <header class="header">
+        <div class="clock">
+            <span id="hours">00</span>:
+            <span id="minutes">00</span>:
+            <span id="seconds">00</span>
+          </div>
+        <!-- ヘッダーロゴ -->
+        
+      
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="nav">
+      
+          <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+          <input id="drawer_input" class="drawer_hidden" type="checkbox">
+      
+          <!-- ハンバーガーアイコン -->
+          <label for="drawer_input" class="drawer_open"><span></span></label>
+      
+          <!-- メニュー -->
+          <nav class="nav_content">
+            <ul class="nav_list">
+                <div class="logo">その他の班員一覧</div>
+                <li class="nav_item"><a href="yamashita.html">山下</a></li>
+                <li class="nav_item"><a href="inoue.html">井上</a></li>
+                <li class="nav_item"><a href="rekuto.html">林玲</a></li>
+                <li class="nav_item"><a href="ayuki.html">林歩</a></li>
+                <li class="nav_item"><a href="index.html">TOPへ戻る</a></li>
+            </ul>
+          </nav>
+      
+        </div>
 	</header>
     <!-- ヘッダー ここまで -->
     <!--メイン-->
+    <div class="photo">
+    <h1>富谷拓末の紹介ページ<small>（作成者：林玲）</small></h1>
+        <div id="disp"><img src="image/unnamed.jpg"></div>
+        写真：
+        <input type="button" value="表示" onclick="hyoji(0)">
+        <input type="button" value="非表示" onclick="hyoji(1)">
+    </div>    
     <p><b>年齢:</b>19歳<br>
     <b>趣味:</b>友人と共にアフタヌーンティーを嗜むこと<br>
     <b>得意科目:</b>開発技術<br>
@@ -67,31 +84,21 @@
     </table>
 
     <!--背景-->
-    <div>
+    <div class="botan">
         <h2>背景色変更</h2>
         <button id="changeColorButton">ボタン</button>
         <body>
             <script src="js/randomcolor.js"></script>
         </body>
     </div>
+    <!--背景-->
     
-    
-    <!--コメント　終わり-->
     <!--メイン　終わり-->
     <!-- フッター -->
 	<footer>
-		<h4>その他の班員一覧</h4>
-		<nav>
-            <ul>
-                <li><a href="tomi.html">富谷</a></li>
-                <li><a href="yamashita.html">山下</a></li>
-                <li><a href="inoue.html">井上</a></li>
-                <li><a href="rekuto.html">林玲</a></li>
-                <li><a href="ayuki.html">林歩</a></li>
-                <li><a href="index.html">TOPへ戻る</a></li>
-            </ul>
-        </nav>
+		
 	</footer>
 	<!-- フッター ここまで -->
+<script src="js/app.js"></script>
 </body>
 </html>
