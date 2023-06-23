@@ -1,0 +1,80 @@
+/* tomitani.css */
+
+/* ページ全体のスタイル */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    margin: 0;
+    padding: 0px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+/* ヘッダーのスタイル */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* コンテンツのスタイル */
+h2 {
+    color: #333;
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+tr {
+    border: solid 2px #333;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+/* フッターのスタイル */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h4 {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
