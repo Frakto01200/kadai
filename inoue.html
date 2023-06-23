@@ -10,6 +10,25 @@
     <!-- ヘッダー -->
     <header>
         <h1>井上拓海の紹介ページ（作成者：富谷）</h1>
+        <div id="disp"><img src="image/inoue.png"></div>
+        写真：
+        <input type="button" value="表示" onclick="hyoji(0)">
+        <input type="button" value="非表示" onclick="hyoji(1)">
+        <script>
+
+            function hyoji(num)
+            {
+              if (num == 0)
+              {
+                document.getElementById("disp").style.display="block";
+              }
+              else
+              {
+                document.getElementById("disp").style.display="none";
+              }
+            }
+            
+            </script>
     </header>
     <!-- ヘッダー ここまで -->
     <!--メイン-->
@@ -22,9 +41,10 @@
     <!--コメント-->
     <p>班員からのコメント：<br>
     富谷：パワーを感じる<br>
+    林歩：一緒に頑張ろう！<br>
     山下：私のページ作成、ありがとうございます。<br>
-    林歩：<br>
     林玲：一緒に勉強頑張ろう！</p>
+
     <!--コメント　終わり-->
     <!--メイン　終わり-->
     <!-- フッター -->
@@ -34,7 +54,6 @@
             <ul>
                 <li><a href="tomi.html">富谷</a></li>
                 <li><a href="yamashita.html">山下</a></li>
-                <li><a href="inoue.html">井上</a></li>
                 <li><a href="rekuto.html">林玲</a></li>
                 <li><a href="ayuki.html">林歩</a></li>
                 <li><a href="index.html">TOPへ戻る</a></li>
