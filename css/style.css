@@ -53,7 +53,6 @@ p {
 
 /* スタイルを定義する */
 .modal {
-<<<<<<< HEAD
     display: none;
     position: fixed;
     z-index: 1;
@@ -91,7 +90,6 @@ p {
     cursor: pointer;
 }
 
-=======
 	display: none;
 	position: fixed;
 	z-index: 1;
@@ -128,10 +126,4 @@ p {
 	text-decoration: none;
 	cursor: pointer;
 }
-.home {
-	background-image: url("../image/background.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-}
->>>>>>> 4681062723453fe6a1415b3abc4c9a7d0ed7f1ef
+
