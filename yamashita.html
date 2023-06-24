@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/yamashita.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+ <title>
+        山下裕幸の紹介ページ
+    </title>
+</head>
+<body>
+                   <!-- ヘッダー -->
+    <header>
+        <h1 class="sakuseisya">山下裕幸の紹介ページ（作成者：井上）</h1>
+    </header>
+               <!-- ヘッダー ここまで -->
+
+                   <!--メイン-->
+  <section class="hero">
+  <div class="video-box overlay">
+    <video class="video" muted autoplay loop playsinline>
+      <source src="http://nowte.net/public/movie.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="text-box">
+    <h1>Fear Nothing<br>Owner OF Talent</h1>
+  </div>
+</section>
+	
+	<script>
+//初期表示は非表示
+document.getElementById("p1").style.display ="none";
+
+function clickBtn1(){
+    const p1 = document.getElementById("p1");
+
+    if(p1.style.display=="block"){
+        // noneで非表示
+        p1.style.display ="none";
+    }else{
+        // blockで表示
+        p1.style.display ="block";
+    }
+}
+</script>
+<input type="button" value="ボタン" onclick="clickBtn1()" />
+	
+	<div class="flex">
+		<div class="testIcon"><img src="image/yamashita.png" alt="" id ="p1"></div>
+		
+		<div>
+			<table>
+				<tr>
+					<p class="text">名前:山下裕幸</p>
+					<p class="text">年齢:19歳</p>
+					<p class="text">趣味:PCゲーム</p>
+					<p class="text">得意科目:特になし</p>
+					<p class="text">好きな食べ物:うどん</p>
+					<p class="text">就職活動の方針:これから頑張る</p>
+				</tr>
+			</table>	
+		</div>
+		
+		
+		</div>
+	</div>
+</div>	
+
+					<!--コメント-->
+
+					  
+	<div class="menber">
+		<p class="gyo">班員からのコメント</p>
+					 <p class="gyo">富谷:やせるぞ！<br>
+					 <p class="gyo">井上:写真ありがとうございました。大切にします。<br>
+					 <p class="gyo">林玲:いつもお世話になっております。<br>
+					 <p class="gyo">林歩:うどん食べたい</p>
+	</div>
+		
+		
+		</div>
+	
+					  <!--コメントここまで-->
+					  <!--メインここまで-->			  
+	<div class="menber">
+		<footer>
+	       <nav>
+				<p>その他の班員一覧</p>
+				<ul>
+					<li><a href="tomi.html">富谷拓未</a></li>
+					<li><a href="inoue.html">井上拓海</a></li>
+					<li><a href="rekuto.html">林玲玖斗</a></li>
+					<li><a href="ayuki.html">林歩輝</a></li>
+					<li><a href="top.html">topへ戻る</a></li>
+				</ul>
+			</nav>
+		</footer>
+	</div>
+	
+		<script src="js/app.js"></script>
+	</body>
+</html>
